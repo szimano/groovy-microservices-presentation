@@ -8,12 +8,12 @@
 import spock.lang.Specification
 
 class LibraryTest extends Specification{
-    def "someLibraryMethod returns true"() {
+    def "main can be initiated"() {
         setup:
-        Library lib = new Library()
+        Main main = new Main()
         when:
-        def result = lib.someLibraryMethod()
+        def result = main
         then:
-        result == true
+        result != null
     }
 }
